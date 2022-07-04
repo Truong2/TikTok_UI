@@ -2,6 +2,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;1,400&family=Roboto:wght@300;400;500;700&display=swap");
 :root {
   --primary: rgba(254, 44, 85, 1);
+  --text-color: #3333;
+
+  --minHeight-button: 40px;
+  --height-Sidebar: 356px;
 }
 html {
   font-size: 62.5%;
@@ -10,4 +14,10 @@ body {
   font-size: 1.6rem;
   font-family: "Roboto", sans-serif;
   line-height: 1.5;
+  color: var(--text-color);
+  text-rendering: optimizeSpeed;
+}
+a[href] {
+  color: var(--text-color);
+  text-decoration: none;
 }

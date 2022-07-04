@@ -1,0 +1,130 @@
+.Wrapper {
+  //   position: fixed;
+  //   top: 0;
+  height: 60px;
+  width: 100%;
+  box-shadow: 0px 1px 1px rgb(0 0 0 / 12%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content {
+  height: 100%;
+  width: 1150px;
+  max-width: 1150px;
+  padding-right: 24px;
+  padding-left: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .search-input {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 8px 16px;
+    background: rgba(22, 24, 35, 0.06);
+    border-radius: 92px;
+    &:focus {
+      border: 1px solid rgba(254, 44, 85, 1);
+    }
+    .Search {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 22px;
+      border: none;
+      background: transparent;
+      outline: none;
+      padding: 0;
+      width: 292px;
+      caret-color: rgba(254, 44, 85, 1);
+      appearance: textfield;
+    }
+    .Search:not(:placeholder-shown) ~ .search-icon {
+      color: rgba(22, 24, 35, 0.75);
+    }
+    .close {
+      cursor: pointer;
+      background: transparent;
+      outline: none;
+      border: 1px solid transparent;
+      margin: 0px 12px;
+      color: rgba(22, 24, 35, 0.34);
+    }
+    .loading {
+      display: none;
+      color: rgba(22, 24, 35, 0.34);
+    }
+    .search-icon {
+      margin: -12px -16px;
+      font-size: 22px;
+      font-weight: 400;
+      cursor: pointer;
+      outline: none;
+      border: none;
+      background: transparent;
+      color: rgb(185 182 182);
+      margin-left: 0;
+      border-top-right-radius: 92px;
+      border-bottom-right-radius: 92px;
+      padding: 11px 16px 11px 12px;
+      &:hover {
+        opacity: 0.7;
+      }
+    }
+    .Bulkhead {
+      width: 1px;
+      height: 28px;
+      margin: -3px 0;
+      background: rgba(22, 24, 35, 0.12);
+    }
+  }
+  .actions {
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .actions-upload {
+      min-width: 120px;
+      padding: 0 16px;
+      height: var(--minHeight-button);
+      border: 2px solid rgba(22, 24, 35, 0.12);
+      border-radius: 2px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .actions-upload-Name {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;
+        color: #161823;
+      }
+      .icon-upload {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;
+        color: #161823;
+      }
+    }
+    .actions-login {
+      border-radius: 4px;
+      border: none;
+      color: rgba(255, 255, 255, 1);
+      background-color: rgba(254, 44, 85, 1);
+      min-width: 100px;
+      min-height: var(--minHeight-button);
+      font-size: 18px;
+      line-height: 25px;
+      font-weight: 600;
+      display: flex;
+      margin-left: 15px;
+      align-items: center;
+      justify-content: center;
+      padding: 6px 8px;
+      user-select: none;
+      outline: none;
+      cursor: pointer;
+    }
+  }
+}
